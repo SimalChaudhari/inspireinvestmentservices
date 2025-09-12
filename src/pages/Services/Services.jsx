@@ -8,7 +8,7 @@ const Services = () => {
     <div className="min-h-screen">
       {/* Hero Section with Header */}
       <Hero
-        backgroundImage="https://images.pexels.com/photos/6801874/pexels-photo-6801874.jpeg"
+        backgroundImage="https://cdn.pixabay.com/photo/2021/02/03/00/10/receptionists-5975962_1280.jpg"
         title='"Everyone has unique financial goals and Inspire Investment Service offers many different ways to help you achieve them."'
         titleSize="text-2xl"
       />

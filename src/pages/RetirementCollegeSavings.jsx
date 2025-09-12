@@ -5,7 +5,7 @@ const RetirementCollegeSavings = () => {
   return (
     <div>
       <Hero 
-        backgroundImage="https://images.pexels.com/photos/462331/pexels-photo-462331.jpeg"
+        backgroundImage="https://cdn.pixabay.com/photo/2017/10/02/01/48/grandparents-2807673_960_720.jpg"
         title="Retirement & College Savings"
         titleSize="text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
       />

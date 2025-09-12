@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
+import { FaAngleRight } from "react-icons/fa6";
 
 const Header = () => {
   const location = useLocation()
@@ -27,7 +28,18 @@ const Header = () => {
     if (href === '/') {
       return location.pathname === '/'
     }
-    return location.pathname.startsWith(href)
+    // For exact matches, check if the pathname exactly matches the href
+    if (location.pathname === href) {
+      return true
+    }
+    // For partial matches, only match if it's not a more specific path
+    // For example, /roth-ira should not match /roth-ira-conversion
+    if (location.pathname.startsWith(href)) {
+      // Check if the next character after the href is a slash or end of string
+      const nextChar = location.pathname[href.length]
+      return nextChar === '/' || nextChar === undefined
+    }
+    return false
   }
 
   useEffect(() => {
@@ -157,7 +169,7 @@ const Header = () => {
 
                 {/* Dropdown */}
                 {item.hasDropdown && activeDropdown === item.name && (
-                  <div className="absolute top-full left-0 mt-1 w-64 bg-white rounded-md shadow-lg border border-gray-200 py-2 z-50">
+                  <div className="absolute top-full left-0 mt-0 w-64 bg-white rounded-md shadow-lg border border-gray-200 py-2 z-50">
                     {item.dropdownItems.map((dropdownItem) => (
                       <div 
                         key={dropdownItem.name} 
@@ -184,12 +196,12 @@ const Header = () => {
                           }}
                         >
                           {dropdownItem.name}
-                          {dropdownItem.hasSubDropdown && <span>▶</span>}
+                          {dropdownItem.hasSubDropdown && <FaAngleRight className="w-4 h-4" />}
                         </button>
 
                         {/* Sub Dropdown */}
                         {dropdownItem.hasSubDropdown && activeSubDropdown === dropdownItem.name && (
-                          <div className="absolute left-full top-0 ml-2 w-56 bg-white rounded-md shadow-lg border border-gray-200 py-2 z-[60]">
+                          <div className="absolute left-full top-0 ml-0 w-56 bg-white rounded-md shadow-lg border border-gray-200 py-2 z-[60]">
                             {dropdownItem.subDropdownItems.map((subItem) => (
                               <button
                                 key={subItem.name}

@@ -5,7 +5,7 @@ const Annuity = () => {
   return (
     <div>
       <Hero 
-        backgroundImage="https://images.pexels.com/photos/462331/pexels-photo-462331.jpeg"
+        backgroundImage="https://img.freepik.com/free-photo/business-women-signature-document_1388-90.jpg?t=st=1757678285~exp=1757681885~hmac=4cf9664b646f71690e1047764f9d4488865a84914fb31e6b72eac03f0e3b9bf3&w=1480"
         title="Annuity Solutions"
         titleSize="text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
       />

@@ -5,7 +5,7 @@ const WhatIsIra = () => {
   return (
     <div>
       <Hero 
-        backgroundImage="https://images.pexels.com/photos/462331/pexels-photo-462331.jpeg"
+        backgroundImage="https://cdn.pixabay.com/photo/2015/01/07/15/52/family-591581_1280.jpg"
         title="What is an IRA?"
         titleSize="text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
       />
