@@ -89,17 +89,17 @@ const ServicesComponent = () => {
     <div className="bg-white py-16 sm:py-20 lg:py-24">
       <div className="container mx-auto px-4">
         {/* Introduction Text */}
-        <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 mb-6 font-lora">
+        <div className="mb-16">
+          {/* <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
             Our Services
-          </h2>
-          <p className="text-lg sm:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-lora">
+          </h2> */}
+          <p className="text-lg sm:text-xl text-customGray leading-relaxed">
             You have specific financial objectives in mind – planning for retirement, creating a college savings strategy, perhaps opening your own business. We have the comprehensive suite of investment products and services you need to turn your goals into reality. Partnering with your financial advisor, you can build a diversified portfolio from a broad universe of quality investments, including insurance and annuity products can help to protect your financial future.
           </p>
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 max-w-4xl mx-auto">
           {services.map((service) => (
             <div key={service.id} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 group flex flex-col">
               {/* Service Image */}
@@ -109,20 +109,19 @@ const ServicesComponent = () => {
                   alt={service.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
-                <div className="absolute inset-0 bg-black bg-opacity-20 group-hover:bg-opacity-30 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-customBlack bg-opacity-20 group-hover:bg-opacity-30 transition-opacity duration-300"></div>
               </div>
 
               {/* Service Content */}
               <div className="p-6 sm:p-8 flex flex-col flex-grow">
-                <h3 className="text-xl sm:text-2xl font-bold text-gray-800 mb-4 font-lora group-hover:text-customBlue transition-colors duration-300">
+                <h3 className="text-xl sm:text-2xl font-bold text-customBlue2 mb-4 group-hover:text-customBlue transition-colors duration-300">
                   {service.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed mb-6 font-lora flex-grow">
+                <p className="text-customGray leading-relaxed mb-6 flex-grow">
                   {service.description}
                 </p>
                 <button 
-                  className="w-full bg-customBlue text-white py-4 px-8 rounded-lg font-bold text-lg hover:bg-blue-600 transition-all duration-300 font-lora mt-auto shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-                  style={{backgroundColor: '#74a4cb'}}
+                  className="w-full bg-customBlue2 text-white py-4 px-8 rounded-lg font-bold text-lg hover:bg-customBlue transition-all duration-300 mt-auto shadow-lg hover:shadow-xl transform hover:-translate-y-1"
                 >
                   Learn More
                 </button>

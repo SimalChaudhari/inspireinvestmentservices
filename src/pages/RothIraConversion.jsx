@@ -16,10 +16,10 @@ const RothIraConversion = () => {
           <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
             {/* Introduction */}
             <div className="mb-8">
-              <h2 className="text-2xl font-semibold text-gray-900 mb-4 font-lora">
+              <h2 className="text-2xl font-semibold text-customGray mb-4">
                 Is a Roth IRA Conversion the Right Strategy for You?
               </h2>
-              <p className="text-gray-700 leading-relaxed mb-4">
+              <p className="text-customGray leading-relaxed mb-4">
                 A Roth conversion is a strategy that allows you to pay income taxes on some or all of 
                 your retirement assets today, rather than when you withdraw them in retirement. It's 
                 done by converting a Traditional IRA to a Roth IRA, and, with few exceptions, anyone 
@@ -29,10 +29,10 @@ const RothIraConversion = () => {
 
             {/* Benefits Section */}
             <div className="mb-8">
-              <h2 className="text-2xl font-semibold text-gray-900 mb-4 font-lora">
+              <h2 className="text-2xl font-semibold text-customGray mb-4">
                 What are the benefits of a Roth IRA conversion?
               </h2>
-              <p className="text-gray-700 leading-relaxed mb-6">
+              <p className="text-customGray leading-relaxed mb-6">
                 Unlike with a Traditional IRA, you're generally not taxed when you withdraw contributions 
                 and earnings from your Roth IRA – as long as your Roth IRA is at least five years old 
                 and you're 59 ½ or older. If not, the earnings portion of the withdrawal may be subject 
@@ -73,10 +73,10 @@ const RothIraConversion = () => {
 
             {/* Rules & Limits Section */}
             <div className="mb-8">
-              <h2 className="text-2xl font-semibold text-gray-900 mb-4 font-lora">
+              <h2 className="text-2xl font-semibold text-customGray mb-4">
                 Roth IRA Rules & Limits
               </h2>
-              <p className="text-gray-700 leading-relaxed mb-6">
+              <p className="text-customGray leading-relaxed mb-6">
                 Before converting your IRA, there are important tax rules and considerations. If you do 
                 decide to convert to a Roth, the taxes you'll owe for the conversion generally will be 
                 based on the value of the investments in your IRA at the time. Whatever amount you 
@@ -99,33 +99,33 @@ const RothIraConversion = () => {
 
             {/* Decision Factors */}
             <div className="mb-8">
-              <h2 className="text-2xl font-semibold text-gray-900 mb-4 font-lora">
+              <h2 className="text-2xl font-semibold text-customGray mb-4">
                 Key Factors to Consider
               </h2>
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="bg-gray-50 rounded-lg p-6">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                  <h3 className="text-lg font-semibold text-customGray mb-3">
                     Tax Affordability
                   </h3>
-                  <p className="text-gray-700">
+                  <p className="text-customGray">
                     Will you be able to afford the taxes due?
                   </p>
                 </div>
 
                 <div className="bg-gray-50 rounded-lg p-6">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                  <h3 className="text-lg font-semibold text-customGray mb-3">
                     Tax Rate Analysis
                   </h3>
-                  <p className="text-gray-700">
+                  <p className="text-customGray">
                     What is your tax rate now, and what will it be in the future?
                   </p>
                 </div>
 
                 <div className="bg-gray-50 rounded-lg p-6">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                  <h3 className="text-lg font-semibold text-customGray mb-3">
                     Withdrawal Timeline
                   </h3>
-                  <p className="text-gray-700">
+                  <p className="text-customGray">
                     When do you need to make withdrawals?
                   </p>
                 </div>
@@ -134,10 +134,10 @@ const RothIraConversion = () => {
 
             {/* Call to Action */}
             <div className="bg-gray-100 rounded-lg p-6 text-center">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4 font-lora">
+              <h3 className="text-xl font-semibold text-customGray mb-4">
                 Ready to Explore Roth IRA Conversion?
               </h3>
-              <p className="text-gray-700 mb-6">
+              <p className="text-customGray mb-6">
                 Our financial advisors can help you determine if a Roth IRA conversion is the right 
                 strategy for your retirement planning and guide you through the process.
               </p>
@@ -155,10 +155,10 @@ const RothIraConversion = () => {
           {/* Additional Resources */}
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-white rounded-lg shadow-lg p-6">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4 font-lora">
+              <h3 className="text-xl font-semibold text-customGray mb-4">
                 Related Services
               </h3>
-              <ul className="space-y-2 text-gray-700">
+              <ul className="space-y-2 text-customGray">
                 <li>• <a href="/roth-ira" className="text-blue-600 hover:text-blue-800">Roth IRA</a></li>
                 <li>• <a href="/traditional-ira" className="text-blue-600 hover:text-blue-800">Traditional IRA</a></li>
                 <li>• <a href="/what-is-ira" className="text-blue-600 hover:text-blue-800">What is an IRA?</a></li>
@@ -167,10 +167,10 @@ const RothIraConversion = () => {
             </div>
             
             <div className="bg-white rounded-lg shadow-lg p-6">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4 font-lora">
+              <h3 className="text-xl font-semibold text-customGray mb-4">
                 Conversion Benefits
               </h3>
-              <ul className="space-y-2 text-gray-700">
+              <ul className="space-y-2 text-customGray">
                 <li>• Pay taxes now, withdraw tax-free later</li>
                 <li>• No required minimum distributions</li>
                 <li>• Tax-free growth potential</li>

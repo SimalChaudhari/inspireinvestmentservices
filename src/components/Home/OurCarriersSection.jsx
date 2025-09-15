@@ -99,7 +99,7 @@ const OurCarriersSection = () => {
         {/* Section Header */}
         <div className="text-center mb-12 sm:mb-16">
           <div className="inline-block">
-            <h2 className="px-6 py-3 rounded-lg text-xl sm:text-2xl font-bold font-lora">
+            <h2 className="px-6 py-3 rounded-lg text-2xl md:text-3xl font-bold text-customBlue2">
               Our Carriers
             </h2>
           </div>

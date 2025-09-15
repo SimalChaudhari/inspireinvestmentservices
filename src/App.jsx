@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Layout from './components/Layout'
+import ScrollToTop from './components/ScrollToTop'
 import Home from './pages/Home/Home'
 import About from './pages/About'
 import Services from './pages/Services/Services'
@@ -17,10 +18,17 @@ import LongtermCare from './pages/LongtermCare'
 import FixedAnnuities from './pages/FixedAnnuities'
 import VariableAnnuities from './pages/VariableAnnuities'
 import IncomeAnnuities from './pages/IncomeAnnuities'
+import WillAndTrust from './pages/WillAndTrust'
+import WealthManagement from './pages/WealthManagement'
+import MortgageProtection from './pages/MortgageProtection'
+import BuySellAgreement from './pages/BuySellAgreement'
+import LifeInsuranceGuide from './pages/LifeInsuranceGuide'
+import StepsToFinancialSecurity from './pages/StepsToFinancialSecurity'
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
@@ -40,6 +48,12 @@ function App() {
           <Route path="fixed-annuities" element={<FixedAnnuities />} />
           <Route path="variable-annuities" element={<VariableAnnuities />} />
           <Route path="income-annuities" element={<IncomeAnnuities />} />
+          <Route path="will-trust" element={<WillAndTrust />} />
+          <Route path="wealth-management" element={<WealthManagement />} />
+          <Route path="mortgage-protection" element={<MortgageProtection />} />
+          <Route path="buy-sell" element={<BuySellAgreement />} />
+          <Route path="life-insurance-guide" element={<LifeInsuranceGuide />} />
+          <Route path="financial-security" element={<StepsToFinancialSecurity />} />
         </Route>
       </Routes>
     </Router>

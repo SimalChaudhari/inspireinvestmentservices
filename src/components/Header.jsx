@@ -51,18 +51,30 @@ const Header = () => {
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = "hidden"  // lock scroll
+    } else {
+      document.body.style.overflow = "auto"    // unlock scroll
+    }
+  
+    return () => {
+      document.body.style.overflow = "auto"    // cleanup on unmount
+    }
+  }, [isMobileMenuOpen])
+  
 
   // Navigation items
   const navItems = [
     { name: 'Home', href: '/' },
-    { 
-      name: 'Investments & Services', 
-      href: '#', 
+    {
+      name: 'Investments & Services',
+      href: '#',
       hasDropdown: true,
       dropdownItems: [
         { name: 'Services', href: '/services' },
-        { 
-          name: 'Retirement & College Savings', 
+        {
+          name: 'Retirement & College Savings',
           href: '/retirement',
           hasSubDropdown: true,
           subDropdownItems: [
@@ -76,8 +88,8 @@ const Header = () => {
         { name: 'Life Insurance', href: '/life-insurance' },
         { name: 'Health Insurance', href: '/health-insurance' },
         { name: 'Long-term Care', href: '/longterm-care' },
-        { 
-          name: 'Annuity', 
+        {
+          name: 'Annuity',
           href: '/annuity',
           hasSubDropdown: true,
           subDropdownItems: [
@@ -98,45 +110,42 @@ const Header = () => {
   ]
 
   // Dynamic classes
-  const headerClasses = `fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-    isScrolled 
-      ? 'bg-white text-gray-800 shadow-lg' 
+  const headerClasses = `fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
+      ? 'bg-white text-gray-800 shadow-lg'
       : 'bg-transparent text-white'
-  }`
+    }`
 
   const navLinkClasses = (isMobile = false) => {
-    const baseClasses = isMobile 
-      ? 'transition-colors px-2 py-2 rounded-md font-lora'
-      : 'transition-colors px-2 py-1 font-lora'
-    
+    const baseClasses = isMobile
+      ? 'transition-colors px-2 py-2 rounded-md'
+      : 'transition-colors px-2 py-1'
+
     const hoverClasses = isScrolled
-      ? isMobile 
+      ? isMobile
         ? 'hover:text-blue-600 hover:bg-gray-100'
         : 'hover:text-blue-600'
       : isMobile
         ? 'hover:text-blue-200 hover:bg-blue-700'
         : 'hover:text-blue-200'
-    
+
     return `${baseClasses} ${hoverClasses}`
   }
 
-  const buttonClasses = `lg:hidden p-2 rounded-md transition-colors ${
-    isScrolled 
-      ? 'text-gray-800 hover:bg-gray-100' 
+  const buttonClasses = `lg:hidden p-2 rounded-md transition-colors ${isScrolled
+      ? 'text-gray-800 hover:bg-gray-100'
       : 'text-white hover:bg-blue-700'
-  }`
+    }`
 
-  const mobileMenuClasses = `lg:hidden mt-4 pb-4 border-t ${
-    isScrolled ? 'border-gray-200' : 'border-blue-500'
-  }`
+  const mobileMenuClasses = `lg:hidden mt-4 pb-4 border-t ${isScrolled ? 'border-gray-200' : 'border-blue-500'
+    }`
 
   return (
     <header className={headerClasses}>
       <div className="w-full px-4 py-3 sm:py-4">
         <div className="flex justify-between items-center">
-          <button 
-            onClick={() => navigate('/')} 
-            className="text-lg sm:text-xl md:text-2xl font-bold truncate font-lora hover:opacity-80 transition-opacity text-left"
+          <button
+            onClick={() => navigate('/')}
+            className="text-lg sm:text-xl md:text-2xl font-bold truncate hover:opacity-80 transition-opacity text-left"
           >
             Inspire Investment Services
           </button>
@@ -144,16 +153,15 @@ const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex space-x-6">
             {navItems.map((item) => (
-              <div 
-                key={item.name} 
+              <div
+                key={item.name}
                 className="relative group"
                 onMouseEnter={() => item.hasDropdown && setActiveDropdown(item.name)}
                 onMouseLeave={() => item.hasDropdown && setActiveDropdown(null)}
               >
-                <button 
-                  className={`${navLinkClasses()} flex items-center ${
-                    isActive(item.href) ? 'text-customBlue font-semibold' : ''
-                  }`}
+                <button
+                  className={`${navLinkClasses()} flex items-center ${isActive(item.href) ? 'text-customBlue font-semibold' : ''
+                    }`}
                   onClick={item.hasDropdown ? (e) => {
                     e.preventDefault()
                     toggleDropdown(item.name)
@@ -171,18 +179,17 @@ const Header = () => {
                 {item.hasDropdown && activeDropdown === item.name && (
                   <div className="absolute top-full left-0 mt-0 w-64 bg-white rounded-md shadow-lg border border-gray-200 py-2 z-50">
                     {item.dropdownItems.map((dropdownItem) => (
-                      <div 
-                        key={dropdownItem.name} 
+                      <div
+                        key={dropdownItem.name}
                         className="relative"
                         onMouseEnter={() => dropdownItem.hasSubDropdown && setActiveSubDropdown(dropdownItem.name)}
                         onMouseLeave={() => dropdownItem.hasSubDropdown && setActiveSubDropdown(null)}
                       >
                         <button
-                          className={`w-full text-left px-4 py-2 text-sm flex justify-between ${
-                            isActive(dropdownItem.href) 
-                              ? 'text-customBlue font-semibold bg-blue-50' 
+                          className={`w-full text-left px-4 py-2 text-sm flex justify-between ${isActive(dropdownItem.href)
+                              ? 'text-customBlue font-semibold bg-blue-50'
                               : 'text-gray-700 hover:bg-gray-100 hover:text-blue-600'
-                          }`}
+                            }`}
                           onClick={(e) => {
                             if (dropdownItem.hasSubDropdown) {
                               e.preventDefault()
@@ -205,11 +212,10 @@ const Header = () => {
                             {dropdownItem.subDropdownItems.map((subItem) => (
                               <button
                                 key={subItem.name}
-                                className={`w-full text-left px-4 py-2 text-sm ${
-                                  isActive(subItem.href)
+                                className={`w-full text-left px-4 py-2 text-sm ${isActive(subItem.href)
                                     ? 'text-customBlue font-semibold bg-blue-50'
                                     : 'text-gray-600 hover:bg-gray-100 hover:text-blue-600'
-                                }`}
+                                  }`}
                                 onClick={() => {
                                   setActiveDropdown(null)
                                   setActiveSubDropdown(null)
@@ -230,7 +236,7 @@ const Header = () => {
           </nav>
 
           {/* Mobile Menu Button */}
-          <button 
+          <button
             onClick={toggleMobileMenu}
             className={buttonClasses}
             aria-label="Toggle mobile menu"
@@ -247,11 +253,11 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div 
+          <div
             className="fixed inset-0 bg-black bg-opacity-50 z-40 lg:hidden"
             onClick={() => setIsMobileMenuOpen(false)}
           >
-            <div 
+            <div
               className="bg-white h-full w-80 max-w-sm shadow-xl"
               onClick={(e) => e.stopPropagation()}
             >
@@ -275,11 +281,10 @@ const Header = () => {
                   {navItems.map((item) => (
                     <div key={item.name} className="border-b border-gray-100">
                       <button
-                        className={`w-full flex items-center justify-between px-4 py-3 transition-colors ${
-                          isActive(item.href)
+                        className={`w-full flex items-center justify-between px-4 py-3 transition-colors ${isActive(item.href)
                             ? 'text-customBlue font-semibold bg-blue-50'
                             : 'text-gray-700 hover:bg-gray-50'
-                        }`}
+                          }`}
                         onClick={item.hasDropdown ? (e) => {
                           e.preventDefault()
                           toggleDropdown(item.name)
@@ -290,12 +295,11 @@ const Header = () => {
                       >
                         <span className="font-medium">{item.name}</span>
                         {item.hasDropdown && (
-                          <svg 
-                            className={`w-5 h-5 transition-transform ${
-                              activeDropdown === item.name ? 'rotate-180' : ''
-                            }`} 
-                            fill="none" 
-                            stroke="currentColor" 
+                          <svg
+                            className={`w-5 h-5 transition-transform ${activeDropdown === item.name ? 'rotate-180' : ''
+                              }`}
+                            fill="none"
+                            stroke="currentColor"
                             viewBox="0 0 24 24"
                           >
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -307,19 +311,16 @@ const Header = () => {
                       {item.hasDropdown && activeDropdown === item.name && (
                         <div className="bg-gray-50">
                           {item.dropdownItems.map((dropdownItem) => (
-                            <div 
-                              key={dropdownItem.name} 
+                            <div
+                              key={dropdownItem.name}
                               className="border-b border-gray-100 last:border-b-0 relative"
-                              onMouseEnter={() => dropdownItem.hasSubDropdown && setActiveSubDropdown(dropdownItem.name)}
-                              onMouseLeave={() => dropdownItem.hasSubDropdown && setActiveSubDropdown(null)}
                             >
                               <div className="flex items-center justify-between px-6 py-3 text-sm">
                                 <button
-                                  className={`flex-1 text-left transition-colors ${
-                                    isActive(dropdownItem.href)
+                                  className={`flex-1 text-left transition-colors ${isActive(dropdownItem.href)
                                       ? 'text-customBlue font-semibold'
                                       : 'text-gray-600'
-                                  }`}
+                                    }`}
                                   onClick={() => {
                                     setActiveDropdown(null)
                                     setIsMobileMenuOpen(false)
@@ -329,32 +330,37 @@ const Header = () => {
                                   {dropdownItem.name}
                                 </button>
                                 {dropdownItem.hasSubDropdown && (
-                                  <div className="p-2 flex items-center">
-                                    <svg 
-                                      className={`w-5 h-5 transition-transform text-gray-500 ${
-                                        activeSubDropdown === dropdownItem.name ? 'rotate-90' : ''
-                                      }`} 
-                                      fill="none" 
-                                      stroke="currentColor" 
+                                  <button
+                                    className="p-2 flex items-center"
+                                    onClick={(e) => {
+                                      e.preventDefault()
+                                      e.stopPropagation()
+                                      toggleSubDropdown(dropdownItem.name)
+                                    }}
+                                  >
+                                    <svg
+                                      className={`w-5 h-5 transition-transform text-gray-500 ${activeSubDropdown === dropdownItem.name ? 'rotate-90' : ''
+                                        }`}
+                                      fill="none"
+                                      stroke="currentColor"
                                       viewBox="0 0 24 24"
                                     >
                                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                                     </svg>
-                                  </div>
+                                  </button>
                                 )}
                               </div>
 
                               {/* Mobile Sub Dropdown */}
                               {dropdownItem.hasSubDropdown && activeSubDropdown === dropdownItem.name && (
-                                <div className="bg-gray-100">
+                                <div className="border-l-4 border-customBlue">
                                   {dropdownItem.subDropdownItems.map((subItem) => (
                                     <button
                                       key={subItem.name}
-                                      className={`w-full text-left px-8 py-2 text-xs transition-colors ${
-                                        isActive(subItem.href)
+                                      className={` border-b border-gray-200 w-full flex items-center justify-between px-6 py-3 text-sm transition-colors ${isActive(subItem.href)
                                           ? 'text-customBlue font-semibold bg-blue-200'
                                           : 'text-gray-500 hover:bg-gray-200 hover:text-gray-700'
-                                      }`}
+                                        }`}
                                       onClick={() => {
                                         setActiveDropdown(null)
                                         setActiveSubDropdown(null)

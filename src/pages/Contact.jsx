@@ -16,7 +16,7 @@ const Contact = () => {
     <div className="min-h-screen">
       {/* Hero Section with Header */}
       <Hero
-        backgroundImage="https://images.pexels.com/photos/6801642/pexels-photo-6801642.jpeg"
+        backgroundImage="https://png.pngtree.com/background/20250417/original/pngtree-serene-japanese-garden-with-cascading-waterfalls-picture-image_16415070.jpg"
         title="Contact Us"
         titleSize="text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
       />

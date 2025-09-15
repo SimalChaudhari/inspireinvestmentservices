@@ -15,16 +15,16 @@ const LifeInsurance = () => {
           {/* What is Life Insurance */}
           <div className="mb-12">
             <div className="bg-white rounded-lg shadow-lg p-8">
-              <h2 className="text-3xl font-bold text-gray-800 font-lora mb-6">
+              <h2 className="text-3xl font-bold text-customGray mb-6">
                 What is Life Insurance?
               </h2>
-              <p className="text-lg text-gray-700 leading-relaxed font-lora mb-6">
+              <p className="text-lg text-customGray leading-relaxed mb-6">
                 Life insurance is a contract between an insurance policy holder and an insurer or assures, 
                 where the insurer promises to pay a designated beneficiary a sum of money in exchange for 
                 a premium, upon the death of an insured person. Depending on the contract, other events 
                 such as terminal illness or critical illness can also trigger payment.
               </p>
-              <p className="text-lg text-gray-700 leading-relaxed font-lora">
+              <p className="text-lg text-customGray leading-relaxed">
                 The policy holder typically pays a premium, either regularly or as one lump sum. Other 
                 expenses, such as funeral expenses, can also be included in the benefits.
               </p>
@@ -34,11 +34,11 @@ const LifeInsurance = () => {
           {/* How it works */}
           <div className="mb-12">
             <div className="bg-white rounded-lg shadow-lg p-8">
-              <h2 className="text-3xl font-bold text-gray-800 font-lora mb-6">
+              <h2 className="text-3xl font-bold text-customGray mb-6">
                 How it Works
               </h2>
               <div className="bg-blue-50 p-6 rounded-lg">
-                <p className="text-lg text-blue-800 leading-relaxed font-lora">
+                <p className="text-lg text-blue-800 leading-relaxed">
                   With permanent life insurance you can transfer a death benefit to your beneficiaries 
                   free from federal income taxes. Some plans also allow you to build equity, or cash value, 
                   on a tax-deferred basis. This type of life insurance is best suited for individuals or 
@@ -51,13 +51,13 @@ const LifeInsurance = () => {
           {/* How much you need */}
           <div className="mb-12">
             <div className="bg-white rounded-lg shadow-lg p-8">
-              <h2 className="text-3xl font-bold text-gray-800 font-lora mb-6">
+              <h2 className="text-3xl font-bold text-customGray mb-6">
                 How Much You Need
               </h2>
               
               <div className="space-y-6">
                 <div className="bg-gray-50 p-6 rounded-lg">
-                  <p className="text-lg text-gray-700 leading-relaxed font-lora">
+                  <p className="text-lg text-customGray leading-relaxed">
                     The amount you need really depends on your financial goals. No two individuals' life 
                     insurance needs are the same. Your financial advisor will look at your entire financial 
                     picture to help you calculate the right amount for your situation. Factors could include: 
@@ -85,7 +85,7 @@ const LifeInsurance = () => {
           {/* What you can expect to pay */}
           <div className="mb-12">
             <div className="bg-white rounded-lg shadow-lg p-8">
-              <h2 className="text-3xl font-bold text-gray-800 font-lora mb-6">
+              <h2 className="text-3xl font-bold text-customGray mb-6">
                 What You Can Expect to Pay
               </h2>
               
@@ -101,8 +101,8 @@ const LifeInsurance = () => {
                 </div>
 
                 <div className="bg-gray-50 p-6 rounded-lg">
-                  <h3 className="text-lg font-semibold text-gray-800 mb-3">Premium Factors</h3>
-                  <p className="text-gray-700">
+                  <h3 className="text-lg font-semibold text-customGray mb-3">Premium Factors</h3>
+                  <p className="text-customGray">
                     The amount you pay can be based on your age, gender, health and the type and amount of 
                     coverage you choose. Permanent insurance premiums are generally level, and expenses of 
                     the policy are typically balanced out after 20 years.
@@ -115,10 +115,10 @@ const LifeInsurance = () => {
           {/* Types of Life Insurance */}
           <div className="mb-12">
             <div className="bg-white rounded-lg shadow-lg p-8">
-              <h2 className="text-3xl font-bold text-gray-800 font-lora mb-6">
+              <h2 className="text-3xl font-bold text-customGray mb-6">
                 Types of Life Insurance
               </h2>
-              <p className="text-lg text-gray-700 leading-relaxed font-lora mb-6">
+              <p className="text-lg text-customGray leading-relaxed mb-6">
                 There are four major types of life insurance policies. These life insurance types are:
               </p>
               
@@ -153,11 +153,11 @@ const LifeInsurance = () => {
           {/* Term Insurance Explanation */}
           <div className="mb-12">
             <div className="bg-white rounded-lg shadow-lg p-8">
-              <h2 className="text-3xl font-bold text-gray-800 font-lora mb-6">
+              <h2 className="text-3xl font-bold text-customGray mb-6">
                 What Does Term Insurance Mean?
               </h2>
               <div className="bg-gray-50 p-6 rounded-lg">
-                <p className="text-lg text-gray-700 leading-relaxed font-lora">
+                <p className="text-lg text-customGray leading-relaxed">
                   Term insurance is a type of life insurance policy that provides coverage for a certain 
                   period of time or a specified "term" of years. If the insured dies during the time period 
                   specified in the policy and the policy is active, or in force, a death benefit will be paid.
@@ -168,7 +168,7 @@ const LifeInsurance = () => {
 
           {/* Call to Action Button */}
           <div className="text-center mt-12">
-            <button className="bg-blue-600 text-white py-4 px-10 rounded-lg font-bold text-lg hover:bg-blue-700 transition-all duration-300 font-lora shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+            <button className="bg-blue-600 text-white py-4 px-10 rounded-lg font-bold text-lg hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
               Finding the right life insurance match for you
             </button>
           </div>

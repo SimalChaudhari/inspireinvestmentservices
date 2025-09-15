@@ -16,15 +16,15 @@ const RothIra = () => {
           <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
             {/* Introduction */}
             <div className="mb-8">
-              <h2 className="text-2xl font-semibold text-gray-900 mb-4 font-lora">
+              <h2 className="text-2xl font-semibold text-customGray mb-4">
                 Is a Roth IRA Right for You?
               </h2>
-              <p className="text-gray-700 leading-relaxed mb-4">
+              <p className="text-customGray leading-relaxed mb-4">
                 Do you think taxes when you retire will be higher or lower than they are today? 
                 If you suspect they are likely to be higher, a Roth IRA may be a good option for 
                 your retirement savings.
               </p>
-              <p className="text-gray-700 leading-relaxed">
+              <p className="text-customGray leading-relaxed">
                 The money you contribute to a Roth IRA today has already been taxed, so when you 
                 retire and start withdrawing, the money – and any potential growth in the account – 
                 may be tax free. And Roth IRAs offer a lot of flexibility even before you retire.
@@ -33,10 +33,10 @@ const RothIra = () => {
 
             {/* Contribution Limits */}
             <div className="mb-8">
-              <h2 className="text-2xl font-semibold text-gray-900 mb-4 font-lora">
+              <h2 className="text-2xl font-semibold text-customGray mb-4">
                 How Much You Can Contribute
               </h2>
-              <p className="text-gray-700 leading-relaxed mb-4">
+              <p className="text-customGray leading-relaxed mb-4">
                 You can contribute to a Roth IRA as long as you (or your spouse) have taxable 
                 compensation. How much you can contribute depends on your modified adjusted gross 
                 income (MAGI).
@@ -67,10 +67,10 @@ const RothIra = () => {
 
             {/* Withdrawal Rules */}
             <div className="mb-8">
-              <h2 className="text-2xl font-semibold text-gray-900 mb-4 font-lora">
+              <h2 className="text-2xl font-semibold text-customGray mb-4">
                 When You Can Take Money Out
               </h2>
-              <p className="text-gray-700 leading-relaxed mb-4">
+              <p className="text-customGray leading-relaxed mb-4">
                 You're generally not taxed or penalized when you withdraw your Roth IRA contributions 
                 and earnings. However, if your Roth IRA account is not at least 5 years old or if 
                 you're not yet 59 ½, the earnings portion of the withdrawal may be subject to taxes 
@@ -91,10 +91,10 @@ const RothIra = () => {
 
             {/* Call to Action */}
             <div className="bg-gray-100 rounded-lg p-6 text-center">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4 font-lora">
+              <h3 className="text-xl font-semibold text-customGray mb-4">
                 Ready to Start Your Roth IRA?
               </h3>
-              <p className="text-gray-700 mb-6">
+              <p className="text-customGray mb-6">
                 Our financial advisors can help you determine if a Roth IRA is right for your 
                 retirement strategy and guide you through the setup process.
               </p>
@@ -112,10 +112,10 @@ const RothIra = () => {
           {/* Additional Resources */}
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-white rounded-lg shadow-lg p-6">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4 font-lora">
+              <h3 className="text-xl font-semibold text-customGray mb-4">
                 Related Services
               </h3>
-              <ul className="space-y-2 text-gray-700">
+              <ul className="space-y-2 text-customGray">
                 <li>• <a href="/traditional-ira" className="text-blue-600 hover:text-blue-800">Traditional IRA</a></li>
                 <li>• <a href="/what-is-ira" className="text-blue-600 hover:text-blue-800">What is an IRA?</a></li>
                 <li>• <a href="/401k-rollovers" className="text-blue-600 hover:text-blue-800">401(k) Rollovers</a></li>
@@ -124,10 +124,10 @@ const RothIra = () => {
             </div>
             
             <div className="bg-white rounded-lg shadow-lg p-6">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4 font-lora">
+              <h3 className="text-xl font-semibold text-customGray mb-4">
                 Quick Facts
               </h3>
-              <ul className="space-y-2 text-gray-700">
+              <ul className="space-y-2 text-customGray">
                 <li>• Tax-free withdrawals in retirement</li>
                 <li>• No age limit for contributions</li>
                 <li>• No required minimum distributions</li>
