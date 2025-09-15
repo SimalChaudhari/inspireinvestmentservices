@@ -5,7 +5,7 @@ const IncomeAnnuities = () => {
   return (
     <div>
       <Hero 
-        backgroundImage="https://images.pexels.com/photos/462331/pexels-photo-462331.jpeg"
+        backgroundImage="https://lh7-us.googleusercontent.com/YKQMX6YHk000cFPdhDSGAE5uEy4GrOSwbCmTczL2bbb1K6X6_3plLGOrQH2H0W_AWjiRofMI4xTgswUfDTShN0uAT4n-ShUhWUUHcg36Gk2y7ETWJDUGOOYGXsdeZrPFQzaWKFvWH7rgO7AKYcmMexA"
         title="Income Annuities"
         titleSize="text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
       />
@@ -15,17 +15,17 @@ const IncomeAnnuities = () => {
           {/* Introduction */}
           <div className="mb-12">
             <div className="bg-white rounded-lg shadow-lg p-8">
-              <h2 className="text-3xl font-bold text-gray-800 font-lora mb-6">
+              <h2 className="text-3xl font-bold text-customGray mb-6">
                 Understanding Income Annuities
               </h2>
-              <p className="text-lg text-gray-700 leading-relaxed font-lora mb-6">
+              <p className="text-lg text-customGray leading-relaxed mb-6">
                 We typically recommend people shy away from investments promising any type of "guarantee." 
                 However, income annuities (sometimes referred to as "immediate annuities" or "deferred income 
                 annuities," depending on when income payments begin) do offer a predictable guaranteed stream 
                 of income that you can't outlive. As with any investment, though, there are trade-offs.
               </p>
               <div className="bg-blue-50 p-6 rounded-lg">
-                <p className="text-lg text-blue-800 leading-relaxed font-lora">
+                <p className="text-lg text-blue-800 leading-relaxed">
                   With an income annuity, you give the insurance company a lump sum in exchange for a guaranteed 
                   stream of income. Once the money is given to the insurance company, you generally no longer 
                   have access to it. Therefore, income annuities are usually best suited for investors who want 
@@ -38,7 +38,7 @@ const IncomeAnnuities = () => {
           {/* 5 Key Features */}
           <div className="mb-12">
             <div className="bg-white rounded-lg shadow-lg p-8">
-              <h2 className="text-3xl font-bold text-gray-800 font-lora mb-6">
+              <h2 className="text-3xl font-bold text-customGray mb-6">
                 5 Key Features to Consider with an Income Annuity
               </h2>
               
@@ -92,7 +92,7 @@ const IncomeAnnuities = () => {
           {/* Types of Income Annuities */}
           <div className="mb-12">
             <div className="bg-white rounded-lg shadow-lg p-8">
-              <h2 className="text-3xl font-bold text-gray-800 font-lora mb-6">
+              <h2 className="text-3xl font-bold text-customGray mb-6">
                 Types of Income Annuities
               </h2>
               
@@ -116,7 +116,7 @@ const IncomeAnnuities = () => {
           {/* Important Considerations */}
           <div className="mb-12">
             <div className="bg-white rounded-lg shadow-lg p-8">
-              <h2 className="text-3xl font-bold text-gray-800 font-lora mb-6">
+              <h2 className="text-3xl font-bold text-customGray mb-6">
                 Important Considerations
               </h2>
               
@@ -151,10 +151,10 @@ const IncomeAnnuities = () => {
           {/* Additional Resources */}
           <div className="grid md:grid-cols-2 gap-6 mb-12">
             <div className="bg-white rounded-lg shadow-lg p-6">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4 font-lora">
+              <h3 className="text-xl font-semibold text-customGray mb-4">
                 Related Services
               </h3>
-              <ul className="space-y-2 text-gray-700">
+              <ul className="space-y-2 text-customGray">
                 <li>• <a href="/annuity" className="text-blue-600 hover:text-blue-800">Annuity Overview</a></li>
                 <li>• <a href="/fixed-annuities" className="text-blue-600 hover:text-blue-800">Fixed Annuities</a></li>
                 <li>• <a href="/variable-annuities" className="text-blue-600 hover:text-blue-800">Variable Annuities</a></li>
@@ -163,10 +163,10 @@ const IncomeAnnuities = () => {
             </div>
             
             <div className="bg-white rounded-lg shadow-lg p-6">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4 font-lora">
+              <h3 className="text-xl font-semibold text-customGray mb-4">
                 Income Annuity Benefits
               </h3>
-              <ul className="space-y-2 text-gray-700">
+              <ul className="space-y-2 text-customGray">
                 <li>• Guaranteed lifetime income</li>
                 <li>• Cannot outlive your money</li>
                 <li>• Predictable payments</li>
@@ -178,7 +178,7 @@ const IncomeAnnuities = () => {
 
           {/* Call to Action Button */}
           <div className="text-center">
-            <button className="bg-blue-600 text-white py-4 px-10 rounded-lg font-bold text-lg hover:bg-blue-700 transition-all duration-300 font-lora shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+            <button className="bg-blue-600 text-white py-4 px-10 rounded-lg font-bold text-lg hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
               Finding the right income annuity match for you
             </button>
           </div>

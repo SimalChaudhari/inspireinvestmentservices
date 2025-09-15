@@ -20,7 +20,7 @@ const Home = () => {
       <Hero
         backgroundImage="https://images.pexels.com/photos/462331/pexels-photo-462331.jpeg"
         title="Inspire Investment Services"
-        titleSize="text-6xl"
+        titleSize="text-3xl md:text-4xl font-lora"
       />
 
       {/* Welcome Section */}

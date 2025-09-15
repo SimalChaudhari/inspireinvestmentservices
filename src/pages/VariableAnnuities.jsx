@@ -5,7 +5,7 @@ const VariableAnnuities = () => {
   return (
     <div>
       <Hero 
-        backgroundImage="https://images.pexels.com/photos/462331/pexels-photo-462331.jpeg"
+        backgroundImage="https://lh7-us.googleusercontent.com/YKQMX6YHk000cFPdhDSGAE5uEy4GrOSwbCmTczL2bbb1K6X6_3plLGOrQH2H0W_AWjiRofMI4xTgswUfDTShN0uAT4n-ShUhWUUHcg36Gk2y7ETWJDUGOOYGXsdeZrPFQzaWKFvWH7rgO7AKYcmMexA"
         title="Variable Annuities"
         titleSize="text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
       />
@@ -15,10 +15,10 @@ const VariableAnnuities = () => {
           {/* Introduction */}
           <div className="mb-12">
             <div className="bg-white rounded-lg shadow-lg p-8">
-              <h2 className="text-3xl font-bold text-gray-800 font-lora mb-6">
+              <h2 className="text-3xl font-bold text-customGray mb-6">
                 Understanding Variable Annuities
               </h2>
-              <p className="text-lg text-gray-700 leading-relaxed font-lora">
+              <p className="text-lg text-customGray leading-relaxed">
                 Variable annuities are insurance contracts designed to help you reach your long-term financial 
                 goals by providing you with a way to accumulate tax-deferred retirement savings while you are 
                 preparing for retirement and a stream of income to use when you are in retirement.
@@ -29,11 +29,11 @@ const VariableAnnuities = () => {
           {/* How Variable Annuities Work */}
           <div className="mb-12">
             <div className="bg-white rounded-lg shadow-lg p-8">
-              <h2 className="text-3xl font-bold text-gray-800 font-lora mb-6">
+              <h2 className="text-3xl font-bold text-customGray mb-6">
                 How Variable Annuities Work
               </h2>
               <div className="bg-blue-50 p-6 rounded-lg">
-                <p className="text-lg text-blue-800 leading-relaxed font-lora">
+                <p className="text-lg text-blue-800 leading-relaxed">
                   When you invest in a variable annuity, the insurance company typically offers a selection 
                   of underlying mutual fund-like investments called "subaccounts." You can choose from several 
                   professionally managed and diversified variable annuity subaccounts or portfolios based on 
@@ -46,10 +46,10 @@ const VariableAnnuities = () => {
           {/* Key Features */}
           <div className="mb-12">
             <div className="bg-white rounded-lg shadow-lg p-8">
-              <h2 className="text-3xl font-bold text-gray-800 font-lora mb-6">
+              <h2 className="text-3xl font-bold text-customGray mb-6">
                 Key Features to Consider
               </h2>
-              <p className="text-lg text-gray-700 leading-relaxed font-lora mb-6">
+              <p className="text-lg text-customGray leading-relaxed mb-6">
                 There are several key features to consider with a variable annuity.
               </p>
               
@@ -76,17 +76,17 @@ const VariableAnnuities = () => {
           {/* Flexible Income Options */}
           <div className="mb-12">
             <div className="bg-white rounded-lg shadow-lg p-8">
-              <h2 className="text-3xl font-bold text-gray-800 font-lora mb-6">
+              <h2 className="text-3xl font-bold text-customGray mb-6">
                 Flexible Income Options
               </h2>
-              <p className="text-lg text-gray-700 leading-relaxed font-lora mb-6">
+              <p className="text-lg text-customGray leading-relaxed mb-6">
                 During the distribution phase, you may take income from a variable annuity in a number of ways:
               </p>
               
               <div className="space-y-6">
                 <div className="bg-gray-50 p-6 rounded-lg">
-                  <h3 className="text-lg font-semibold text-gray-800 mb-3">Lifetime Income Stream</h3>
-                  <p className="text-gray-700">
+                  <h3 className="text-lg font-semibold text-customGray mb-3">Lifetime Income Stream</h3>
+                  <p className="text-customGray">
                     All deferred annuities can be converted to a lifetime stream of income.
                   </p>
                 </div>
@@ -115,11 +115,11 @@ const VariableAnnuities = () => {
           {/* Avoiding Probate */}
           <div className="mb-12">
             <div className="bg-white rounded-lg shadow-lg p-8">
-              <h2 className="text-3xl font-bold text-gray-800 font-lora mb-6">
+              <h2 className="text-3xl font-bold text-customGray mb-6">
                 Avoiding Probate
               </h2>
               <div className="bg-yellow-50 border-l-4 border-yellow-400 p-6 rounded-r-lg">
-                <p className="text-lg text-yellow-700 leading-relaxed font-lora">
+                <p className="text-lg text-yellow-700 leading-relaxed">
                   Variable annuity proceeds paid to the beneficiary upon death are excluded from estate probate. 
                   However, the proceeds are subject to ordinary income taxes and estate taxes.
                 </p>
@@ -130,7 +130,7 @@ const VariableAnnuities = () => {
           {/* Investment Options */}
           <div className="mb-12">
             <div className="bg-white rounded-lg shadow-lg p-8">
-              <h2 className="text-3xl font-bold text-gray-800 font-lora mb-6">
+              <h2 className="text-3xl font-bold text-customGray mb-6">
                 Investment Options
               </h2>
               <div className="grid md:grid-cols-2 gap-6">
@@ -155,10 +155,10 @@ const VariableAnnuities = () => {
           {/* Additional Resources */}
           <div className="grid md:grid-cols-2 gap-6 mb-12">
             <div className="bg-white rounded-lg shadow-lg p-6">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4 font-lora">
+              <h3 className="text-xl font-semibold text-customGray mb-4">
                 Related Services
               </h3>
-              <ul className="space-y-2 text-gray-700">
+              <ul className="space-y-2 text-customGray">
                 <li>• <a href="/annuity" className="text-blue-600 hover:text-blue-800">Annuity Overview</a></li>
                 <li>• <a href="/fixed-annuities" className="text-blue-600 hover:text-blue-800">Fixed Annuities</a></li>
                 <li>• <a href="/income-annuities" className="text-blue-600 hover:text-blue-800">Income Annuities</a></li>
@@ -167,10 +167,10 @@ const VariableAnnuities = () => {
             </div>
             
             <div className="bg-white rounded-lg shadow-lg p-6">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4 font-lora">
+              <h3 className="text-xl font-semibold text-customGray mb-4">
                 Variable Annuity Benefits
               </h3>
-              <ul className="space-y-2 text-gray-700">
+              <ul className="space-y-2 text-customGray">
                 <li>• Tax-deferred growth potential</li>
                 <li>• Professional investment management</li>
                 <li>• Flexible income options</li>
@@ -182,7 +182,7 @@ const VariableAnnuities = () => {
 
           {/* Call to Action Button */}
           <div className="text-center">
-            <button className="bg-blue-600 text-white py-4 px-10 rounded-lg font-bold text-lg hover:bg-blue-700 transition-all duration-300 font-lora shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+            <button className="bg-blue-600 text-white py-4 px-10 rounded-lg font-bold text-lg hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
               Finding the right variable annuity match for you
             </button>
           </div>

@@ -15,17 +15,17 @@ const HealthInsurance = () => {
           {/* What is Health Insurance */}
           <div className="mb-12">
             <div className="bg-white rounded-lg shadow-lg p-8">
-              <h2 className="text-3xl font-bold text-gray-800 font-lora mb-6">
+              <h2 className="text-3xl font-bold text-customBlue2 mb-6">
                 Health Insurance
               </h2>
-              <p className="text-lg text-gray-700 leading-relaxed font-lora mb-6">
+              <p className="text-lg text-customGray leading-relaxed mb-6">
                 Health insurance is an insurance that covers the whole or a part of the risk of a person 
                 incurring medical expenses, spreading the risk over numerous persons. By estimating the 
                 overall risk of health risk and health system expenses over the risk pool, an insurer can 
                 develop a routine finance structure, such as a monthly premium or payroll tax, to provide 
                 the money to pay for the health care benefits specified in the insurance agreement.
               </p>
-              <p className="text-lg text-gray-700 leading-relaxed font-lora">
+              <p className="text-lg text-customGray leading-relaxed">
                 The benefit is administered by a central organization such as a government agency, private 
                 business, or not-for-profit entity.
               </p>
@@ -35,7 +35,7 @@ const HealthInsurance = () => {
           {/* Health Insurance Definition */}
           <div className="mb-12">
             <div className="bg-blue-50 border-l-4 border-blue-400 p-6 rounded-r-lg">
-              <p className="text-lg text-blue-800 leading-relaxed font-lora">
+              <p className="text-lg text-blue-800 leading-relaxed">
                 According to the Health Insurance Association of America, health insurance is defined as 
                 "coverage that provides for the payments of benefits as a result of sickness or injury. 
                 It includes insurance for losses from accident, medical expense, disability, or accidental 
@@ -47,14 +47,14 @@ const HealthInsurance = () => {
           {/* How Health Insurance Works */}
           <div className="mb-12">
             <div className="bg-white rounded-lg shadow-lg p-8">
-              <h2 className="text-3xl font-bold text-gray-800 font-lora mb-6">
+              <h2 className="text-3xl font-bold text-customGray mb-6">
                 How Health Insurance Works
               </h2>
               
               <div className="space-y-6">
                 <div className="bg-gray-50 p-6 rounded-lg">
-                  <h3 className="text-xl font-semibold text-gray-800 mb-4">Network Coverage</h3>
-                  <p className="text-gray-700 leading-relaxed font-lora">
+                  <h3 className="text-xl font-semibold text-customGray mb-4">Network Coverage</h3>
+                  <p className="text-customGray leading-relaxed">
                     Health insurance can be tricky to navigate. Managed care insurance plans require policyholders 
                     to receive care from a network of designated healthcare providers for the highest level of 
                     coverage. If patients seek care outside the network, they must pay a higher percentage of 
@@ -112,8 +112,8 @@ const HealthInsurance = () => {
                 </div>
 
                 <div className="bg-gray-50 p-6 rounded-lg">
-                  <h3 className="text-lg font-semibold text-gray-800 mb-3">Auxiliary Products</h3>
-                  <p className="text-gray-700">
+                  <h3 className="text-lg font-semibold text-customGray mb-3">Auxiliary Products</h3>
+                  <p className="text-customGray">
                     In addition to health insurance, qualified individuals can access disability insurance, 
                     critical illness insurance, and long-term care (LTC) insurance.
                   </p>
@@ -125,10 +125,10 @@ const HealthInsurance = () => {
           {/* Group Health Insurance */}
           <div className="mb-12">
             <div className="bg-white rounded-lg shadow-lg p-8">
-              <h2 className="text-3xl font-bold text-gray-800 font-lora mb-6">
+              <h2 className="text-3xl font-bold text-customGray mb-6">
                 What Is a Group Health Insurance Plan?
               </h2>
-              <p className="text-lg text-gray-700 leading-relaxed font-lora">
+              <p className="text-lg text-customGray leading-relaxed">
                 Group Insurance health plans provide coverage to a group of members, usually comprised of company 
                 employees or members of an organization. Group health members usually receive insurance at a reduced 
                 cost because the insurer's risk is spread across a group of policyholders.
@@ -139,14 +139,14 @@ const HealthInsurance = () => {
           {/* How Group Health Insurance Works */}
           <div className="mb-12">
             <div className="bg-white rounded-lg shadow-lg p-8">
-              <h2 className="text-3xl font-bold text-gray-800 font-lora mb-6">
+              <h2 className="text-3xl font-bold text-customGray mb-6">
                 How Group Health Insurance Works
               </h2>
               
               <div className="space-y-6">
                 <div className="bg-green-50 p-6 rounded-lg">
                   <h3 className="text-xl font-semibold text-green-800 mb-4">Plan Structure</h3>
-                  <p className="text-green-700 leading-relaxed font-lora">
+                  <p className="text-green-700 leading-relaxed">
                     Group health insurance plans are purchased by companies and organizations, and then offered to its 
                     members or employees. Plans can only be purchased by groups, which means individuals cannot purchase 
                     coverage through these plans. Plans usually require at least 70% participation in the plan to be valid.

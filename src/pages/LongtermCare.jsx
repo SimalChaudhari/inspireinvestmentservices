@@ -15,10 +15,10 @@ const LongtermCare = () => {
           {/* Introduction */}
           <div className="mb-12">
             <div className="bg-white rounded-lg shadow-lg p-8">
-              <h2 className="text-3xl font-bold text-gray-800 font-lora mb-6">
+              <h2 className="text-3xl font-bold text-customGray mb-6">
                 Protecting Your Loved Ones
               </h2>
-              <p className="text-lg text-gray-700 leading-relaxed font-lora">
+              <p className="text-lg text-customGray leading-relaxed">
                 It's important to help protect your loved ones from financial, physical and emotional burdens 
                 if you should require long-term care.
               </p>
@@ -28,12 +28,12 @@ const LongtermCare = () => {
           {/* What is Long-term Care */}
           <div className="mb-12">
             <div className="bg-white rounded-lg shadow-lg p-8">
-              <h2 className="text-3xl font-bold text-gray-800 font-lora mb-6">
+              <h2 className="text-3xl font-bold text-customGray mb-6">
                 What is Long-term Care?
               </h2>
               <div className="space-y-6">
                 <div className="bg-blue-50 p-6 rounded-lg">
-                  <p className="text-lg text-blue-800 leading-relaxed font-lora">
+                  <p className="text-lg text-blue-800 leading-relaxed">
                     Long-term care is the assistance or supervision you may need when you are not able to do 
                     some of the basic activities of daily living like bathing, dressing, or moving from a bed 
                     to a chair. You may need assistance if you suffer from an injury like a broken hip, an 
@@ -55,10 +55,10 @@ const LongtermCare = () => {
           {/* Funding Long-term Care */}
           <div className="mb-12">
             <div className="bg-white rounded-lg shadow-lg p-8">
-              <h2 className="text-3xl font-bold text-gray-800 font-lora mb-6">
+              <h2 className="text-3xl font-bold text-customGray mb-6">
                 Funding Long-term Care
               </h2>
-              <p className="text-lg text-gray-700 leading-relaxed font-lora mb-6">
+              <p className="text-lg text-customGray leading-relaxed mb-6">
                 Some options for funding long-term care include self-funding, government programs and 
                 long-term care insurance.
               </p>
@@ -83,18 +83,18 @@ const LongtermCare = () => {
           {/* Long-term Care Insurance Benefits */}
           <div className="mb-12">
             <div className="bg-white rounded-lg shadow-lg p-8">
-              <h2 className="text-3xl font-bold text-gray-800 font-lora mb-6">
+              <h2 className="text-3xl font-bold text-customGray mb-6">
                 Long-term Care Insurance Benefits
               </h2>
-              <p className="text-lg text-gray-700 leading-relaxed font-lora mb-6">
+              <p className="text-lg text-customGray leading-relaxed mb-6">
                 Knowing what the benefits of long-term care insurance might be can help you determine 
                 whether it's right for you and your family. These benefits include:
               </p>
               
               <div className="space-y-4">
                 <div className="bg-gray-50 p-6 rounded-lg">
-                  <h3 className="text-lg font-semibold text-gray-800 mb-3">Flexibility in Care Decisions</h3>
-                  <p className="text-gray-700">
+                  <h3 className="text-lg font-semibold text-customGray mb-3">Flexibility in Care Decisions</h3>
+                  <p className="text-customGray">
                     Giving you the flexibility to participate in deciding where to get care and who provides it
                   </p>
                 </div>
@@ -120,7 +120,7 @@ const LongtermCare = () => {
           {/* Basic Components */}
           <div className="mb-12">
             <div className="bg-white rounded-lg shadow-lg p-8">
-              <h2 className="text-3xl font-bold text-gray-800 font-lora mb-6">
+              <h2 className="text-3xl font-bold text-customGray mb-6">
                 Basic Components of Long-term Care Insurance
               </h2>
               
@@ -178,7 +178,7 @@ const LongtermCare = () => {
 
           {/* Call to Action Button */}
           <div className="text-center mt-12">
-            <button className="bg-blue-600 text-white py-4 px-10 rounded-lg font-bold text-lg hover:bg-blue-700 transition-all duration-300 font-lora shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+            <button className="bg-blue-600 text-white py-4 px-10 rounded-lg font-bold text-lg hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
               Finding the right long-term care match for you
             </button>
           </div>

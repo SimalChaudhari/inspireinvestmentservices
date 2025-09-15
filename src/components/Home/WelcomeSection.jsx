@@ -17,25 +17,25 @@ const WelcomeSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
           {/* Left Side - Text Content */}
           <div className="space-y-6 sm:space-y-8">
-            <div className="space-y-4">
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800 font-lora">
+            <div className="space-y-14">
+              <h2 className="md:text-2xl text-xl font-lora font-bold text-customBlack">
                 WELCOME TO Inspire Investment Services
               </h2>
-              <h3 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-gray-700 font-lora">
+              <h3 className="md:text-2xl text-xl font-semibold text-customGray">
                 How We Work Together
               </h3>
             </div>
 
-            <div className="space-y-4 sm:space-y-6 text-gray-600 leading-relaxed">
-              <p className="text-sm sm:text-base lg:text-lg font-lora">
+            <div className="space-y-4 sm:space-y-6 text-customGray leading-relaxed">
+              <p className="text-base md:text-lg">
                 As an Inspire Investment Service (licensed financial professional), I believe it's important to invest my time to understand what you're working toward before you invest your money. It's also important to understand the level of risk you're comfortable accepting when investing so we can balance it with the steps necessary to reach your long-term goals.
               </p>
 
-              <p className="text-sm sm:text-base lg:text-lg font-lora">
+              <p className="text-base md:text-lg">
                 Whether you're planning for retirement, saving for college for children or grandchildren, or just trying to protect the financial future of the ones you care for the most, we can work together to develop specific strategies to help you achieve your goals. We can also monitor your progress to help make sure you stay on track or determine if any adjustments need to be made. Throughout it all, we're dedicated to providing you top-notch client service.
               </p>
 
-              <p className="text-sm sm:text-base lg:text-lg font-lora">
+              <p className="text-base md:text-lg">
                 But we're not alone. Thousands of people and advanced technology support our office so we can help ensure you receive the most current and comprehensive guidance. In addition, we welcome the opportunity to work with your attorney, accountant and other trusted professionals to deliver a comprehensive strategy that leverages everyone's expertise. Working together, we can help you develop a complete, tailored strategy to help you achieve your financial goals.
               </p>
             </div>
